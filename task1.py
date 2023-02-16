@@ -47,7 +47,8 @@ def main(board):
         if counter > 4:
            tmp = check_win(board)
            if tmp:
-              print(emoji.emojize(f'{tmp}, выиграл!:thumbs_up:'))
+              print(tmp, "выиграл!")
+              print(emoji.emojize(':thumbs_up:'))
               win = True
               break
         if counter == 9:
